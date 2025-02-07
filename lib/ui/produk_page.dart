@@ -111,7 +111,7 @@ class ItemProduk extends StatelessWidget {
       child: Card(
         child: ListTile(
           title: Text(produk.namaProduk ?? 'Produk tanpa nama'),
-          subtitle: Text('Harga: Rp. ${produk.hargaProduk?.toString() ?? '0'}'),
+          subtitle: Text('Harga: Rp. ${produk.hargaProduk?.toInt() ?? '0'}'),
         ),
       ),
     );

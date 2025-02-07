@@ -16,7 +16,7 @@ class ProdukBloc {
         throw Exception("Failed to load produk: ${response.statusCode}");
       }
     } catch (e) {
-      print("Error: $e");
+      print("Errors: $e");
       rethrow;
     }
   }
